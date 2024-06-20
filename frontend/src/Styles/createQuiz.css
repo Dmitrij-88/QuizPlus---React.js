@@ -1,0 +1,63 @@
+.title {
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: var(--primary-text-color);
+}
+
+form button {
+    background: rgba(0, 128, 0, 0.815);
+    border: 0;
+    color: #fff;
+    padding: 10px 100px;
+    border-radius: 4px;
+    cursor: url("cursor1.png"), auto;
+}
+
+.createQuiz {
+    border-width: 15px;
+    max-width: 270px;
+    margin: 40px auto;
+    padding: 20px;
+    background: var(--background-color);
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #1b835b;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    right: 300px;
+    color: var(--primary-text-color);
+}
+
+.createdQuizzes{
+    border-width: 15px;
+    margin: 40px auto;
+    padding: 20px 80px;
+    background: var(--background-color);
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #1b835b;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    float: left;
+    color: var(--primary-text-color);
+}
+
+.createQuiz-container{
+    position: relative;
+    margin: 0px 300px 0px 400px;
+    top: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input {
+    width: 20%;
+    padding: 10px 80px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+

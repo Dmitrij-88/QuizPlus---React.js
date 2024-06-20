@@ -1,0 +1,500 @@
+
+.homeContainer{
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 40px;
+    cursor: url("cursor1.png"), auto;
+    
+}
+
+.homeCard {
+    position: relative;
+    height: 170px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+    font-family: 'Poppins';
+    border-radius: 15%;
+    padding: 20px;
+    line-height: 50%;
+    margin: 20px;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    cursor: url("cursor1.png"), auto;
+}
+
+.logOut {
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: top;
+    font-size: 15px;
+    font-family: 'Poppins';
+    justify-content: center;
+    color: #fff;
+    margin: auto;
+    cursor: url("cursor1.png"), auto;
+}
+
+.homeContainer a{
+    text-decoration: none;
+}
+
+.icon{
+    position: relative;
+    height: 40px;
+    top: 100px;
+}
+
+.icon2
+{
+    position: relative;
+    height: 20px;
+    top: 10px;
+}
+
+
+.yellow{
+    background-color: var(--yellow);
+}
+
+.blue{
+    background-color: var(--blue);
+}
+
+.teal{
+    background-color: var(--teal);
+}
+
+.grey
+{
+    background-color: grey;
+}
+
+.green
+{
+    background-color: white;
+}
+.space {
+    width: 200px; 
+    height: 100px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Create Quiz Glowing Button*/
+
+  .btn1::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--blue);
+    border-radius: 15%;
+  }
+  /* glow */
+  .btn1::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #6a00fc, #ff0e93, #ffa10c, #ff4360,
+      #ff059d
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 15%;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  /* hover */
+  .btn1:hover::before {
+    opacity: 1;
+  }
+  
+  .btn1:active:after {
+    background: transparent;
+  }
+
+  .btn1:hover::after{
+    background: transparent;
+  }
+
+
+
+  
+
+    /* Open Quiz Glowing Button*/
+
+  .btn2::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--yellow);
+    border-radius: 15%;
+  }
+  /* glow */
+  .btn2::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #6a00fc, #ff0e93, #ffa10c, #ff4360,
+      #ff059d
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 15%;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  /* hover */
+  .btn2:hover::before {
+    opacity: 1;
+  }
+  
+  .btn2:active:after {
+    background: transparent;
+  }
+
+  .btn2:hover::after{
+    background: transparent;
+  }
+
+
+  /* Edit Quiz Glowing Button*/
+
+  .btn3::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--teal);
+    border-radius: 15%;
+  }
+  /* glow */
+  .btn3::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #6a00fc, #ff0e93, #ffa10c, #ff4360,
+      #ff059d
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 15%;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  /* hover */
+  .btn3:hover::before {
+    opacity: 1;
+  }
+  
+  .btn3:active:after {
+    background: transparent;
+  }
+
+  .btn3:hover::after{
+    background: transparent;
+  }
+
+
+  /* Delete Quiz Glowing Button*/
+
+  .btn4::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--red);
+    border-radius: 15%;
+  }
+  /* glow */
+  .btn4::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #6a00fc, #ff0e93, #ffa10c, #ff4360,
+      #ff059d
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 15%;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  /* hover */
+  .btn4:hover::before {
+    opacity: 1;
+  }
+  
+  .btn4:active:after {
+    background: transparent;
+  }
+
+  .btn4:hover::after{
+    background: transparent;
+
+    
+  }
+
+  /* Analytics Quiz Glowing Button*/
+
+  .btn5::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--purple);
+    border-radius: 15%;
+  }
+  /* glow */
+  .btn5::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #6a00fc, #ff0e93, #ffa10c, #ff4360,
+      #ff059d
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 15%;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  /* hover */
+  .btn5:hover::before {
+    opacity: 1;
+  }
+  
+  .btn5:active:after {
+    background: transparent;
+  }
+
+  .btn5:hover::after{
+    background: transparent;
+  }
+
+
+
+  /* Export Quiz Glowing Button*/
+
+  .btn6::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--pink);
+    border-radius: 15%;
+  }
+  /* glow */
+  .btn6::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #6a00fc, #ff0e93, #ffa10c, #ff4360,
+      #ff059d
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 15%;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  /* hover */
+  .btn6:hover::before {
+    opacity: 1;
+  }
+  
+  .btn6:active:after {
+    background: transparent;
+  }
+
+  .btn6:hover::after{
+    background: transparent;
+  }
+
+
+  /* Settings Quiz Glowing Button*/
+
+  .btn7::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 15%;
+    background-color: grey;
+  }
+  /* glow */
+  .btn7::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #6a00fc, #ff0e93, #ffa10c, #ff4360,
+      #ff059d
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 15%;
+    filter: blur(8px);
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  /* hover */
+  .btn7:hover::before {
+    opacity: 1;
+  }
+  
+  .btn7:active:after {
+    background: transparent;
+  }
+
+  .btn7:hover::after{
+    background: transparent;
+  }
+
+

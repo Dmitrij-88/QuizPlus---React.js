@@ -1,0 +1,65 @@
+header {
+  content: "";
+  background: linear-gradient(
+      45deg,
+      #6a00fc, #ff0e93, #ffa10c, #ff4360,
+      #ff059d
+    );
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-size: 300%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 10;
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  opacity: 1;
+
+  
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+  
+}
+
+header .Navbar_container {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--secondary-text-color);;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a, nav button {
+  margin-left: 10px;
+}
+
+nav button {
+  background: var(--background-color);
+  color: #1b835b;
+  border: 2px solid var(--background-color);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: url("cursor1.png"), auto;
+  font-size: 1em;
+}
+
+ button:hover{
+  background: #1b835b;
+  color: #ffffff;
+  cursor: url("cursor1.png"), auto;
+}
