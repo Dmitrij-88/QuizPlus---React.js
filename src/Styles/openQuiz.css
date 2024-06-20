@@ -1,0 +1,66 @@
+.openQuiz-Container{
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 40px;
+    cursor: url("cursor1.png"), auto;
+}
+
+.openQuiz-Card {
+    position: relative;
+    height: 170px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+    font-family: 'Poppins';
+    border-radius: 15%;
+    padding: 20px;
+    line-height: 50%;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    cursor: url("cursor1.png"), auto;
+}
+
+.openQuiz-Container a{
+    text-decoration: none;
+    cursor: url("cursor1.png"), auto;
+}
+
+.icon{
+    position: relative;
+    height: 40px;
+    top: 100px;
+}
+
+.red{
+    background-color: var(--red);
+}
+
+.yellow{
+    background-color: var(--yellow);
+}
+
+.blue{
+    background-color: var(--blue);
+}
+
+.teal{
+    background-color: var(--teal);
+}
+
+.black{
+    background-color: var(--black);
+}
+
+.pink{
+    background-color: var(--pink);
+}
+
+.purple{
+    background-color: var(--purple);
+}
